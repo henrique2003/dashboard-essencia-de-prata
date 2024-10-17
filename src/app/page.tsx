@@ -1,5 +1,5 @@
-import { LoginPageComponent } from "@/components/login-page"
+import { LoginPage } from '@/components/login'
 
-export default function Page() {
-  return <LoginPageComponent />
+export default function Page(): JSX.Element {
+  return <LoginPage />
 }
