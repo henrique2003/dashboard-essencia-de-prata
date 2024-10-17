@@ -15,7 +15,7 @@ export function LoginPage(): JSX.Element {
   const [error, setError] = useState('')
   const router = useRouter()
 
-  const handleSubmit = async (e: React.FormEvent): void => {
+  const handleSubmit = async (e: React.FormEvent): Promise<void> => {
     e.preventDefault()
     setError('')
 
@@ -25,7 +25,7 @@ export function LoginPage(): JSX.Element {
 
     await new Promise(resolve => setTimeout(resolve, 1000))
 
-    router.push('/dashboard')
+    router.push('/admin/dashboard')
   }
 
   return (
